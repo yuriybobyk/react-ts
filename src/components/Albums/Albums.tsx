@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {IAlbum} from "../../interfaces";
 import {albumService} from "../../services/album.service";
 import Album from "../Album/Album";
+import './Albums.css';
 
 
 const Albums = () => {
@@ -13,7 +14,7 @@ const Albums = () => {
     })
 
     return (
-        <div>
+        <div className={'albums'}>
 
             {albums.map(album => <Album album={album} key={album.id}/>)}
 

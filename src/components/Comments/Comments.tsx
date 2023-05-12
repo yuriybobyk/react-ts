@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {IComment} from "../../interfaces";
 import {commentService} from "../../services/comment.service";
 import Comment from "../Comment/Comment";
-
+import './Comments.css';
 
 
 
@@ -15,7 +15,7 @@ const Comments = () => {
     },[])
 
     return (
-        <div>
+        <div className={'comments'}>
             {comments.map(comment => <Comment comment={comment} key={comment.id}/>)}
         </div>
     );
