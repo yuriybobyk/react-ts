@@ -19,7 +19,9 @@
     "react-router-dom": "^6.12.1",
     "react-hook-form": "^7.44.3",
     "react-redux": "^8.0.7",
-    "@reduxjs/toolkit": "^1.9.5"
+    "@reduxjs/toolkit": "^1.9.5",
+    "joi": "^17.9.2",
+    "@hookform/resolvers": "^3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
