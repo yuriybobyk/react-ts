@@ -1,10 +1,14 @@
 import React, {FC} from 'react';
 import {LoginForm} from "../components";
+import {useSearchParams} from "react-router-dom";
 
-const LoginPage:FC = () => {
+const LoginPage: FC = () => {
+
+    const [query,] = useSearchParams();
     return (
         <div>
-        <LoginForm/>
+            {query.get('expSession') && <h1>Your session has expired... please login again</h1>}
+            <LoginForm/>
         </div>
     );
 };
